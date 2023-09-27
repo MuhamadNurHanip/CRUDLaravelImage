@@ -19,35 +19,32 @@
                             @csrf
                             <div class="form-group">
                                 <label class="font-weight-bold">Judul</label>
-                                <input type="text" class="form-control @error('judul') is-invalid @enderror"
-                                    name="judul" value="{{ old('judul') }}" placeholder="Judul">
+                                <input type="text" class="form-control @error('judul') is-invalid @enderror" name="judul" value="{{ old('judul') }}" placeholder="Judul">
                                 <!-- error message untuk judul -->
                                 @error('judul')
-                                    <div class="alert alert-danger mt-2">
-                                        {{ $message }}
-                                    </div>
+                                <div class="alert alert-danger mt-2">
+                                    {{ $message }}
+                                </div>
                                 @enderror
                             </div>
                             <div class="form-group">
                                 <label class="font-weight-bold">Pengarang</label>
-                                <input type="text" class="form-control @error('pengarang') is-invalid @enderror"
-                                    name="pengarang" value="{{ old('pengarang') }}" placeholder="Pengarang">
+                                <input type="text" class="form-control @error('pengarang') is-invalid @enderror" name="pengarang" value="{{ old('pengarang') }}" placeholder="Pengarang">
                                 <!-- error message untuk pengarang -->
                                 @error('rilis')
-                                    <div class="alert alert-danger mt-2">
-                                        {{ $message }}
-                                    </div>
+                                <div class="alert alert-danger mt-2">
+                                    {{ $message }}
+                                </div>
                                 @enderror
                             </div>
                             <div class="form-group">
                                 <label class="font-weight-bold">Penerbit</label>
-                                <input type="text" class="form-control @error('penerbit') is-invalid @enderror"
-                                    name="penerbit" value="{{ old('penerbit') }}" placeholder="Penerbit">
+                                <input type="text" class="form-control @error('penerbit') is-invalid @enderror" name="penerbit" value="{{ old('penerbit') }}" placeholder="Penerbit">
                                 <!-- error message untuk penerbit -->
                                 @error('Penerbit')
-                                    <div class="alert alert-danger mt-2">
-                                        {{ $message }}
-                                    </div>
+                                <div class="alert alert-danger mt-2">
+                                    {{ $message }}
+                                </div>
                                 @enderror
                             </div>
                             <div class="mb-3">
@@ -55,9 +52,9 @@
                                 <input type="file" class="form-control @error('penerbit') is-invalid @enderror" name="gambar" placeholder="Pilih Gambar">
                                 <!-- error message untuk penerbit -->
                                 @error('gambar')
-                                    <div class="alert alert-danger mt-2">
-                                        {{ $message }}
-                                    </div>
+                                <div class="alert alert-danger mt-2">
+                                    {{ $message }}
+                                </div>
                                 @enderror
                             </div>
                             <button type="submit" class="btn btn-md btn-primary">SIMPAN</button>
