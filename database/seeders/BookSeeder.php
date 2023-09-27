@@ -17,9 +17,9 @@ class BookSeeder extends Seeder
     public function run()
     {
         Books::create([
-            'judul' => 'Tutorial Lolos Play Off MPL',
-            'pengarang' => 'Rizqi Yassar',
-            'penerbit' => 'Gramedia',
+            'judul' => 'Tutorial Menjadi Sepuh Ngoding',
+            'pengarang' => 'Muhamad Nur Hanif',
+            'penerbit' => 'Hanif',
         ]);
     }
 }
