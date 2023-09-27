@@ -19,7 +19,7 @@ class BookSeeder extends Seeder
         Books::create([
             'judul' => 'Tutorial Menjadi Sepuh Ngoding',
             'pengarang' => 'Muhamad Nur Hanif',
-            'penerbit' => 'Hanif',
+            'penerbit' => 'mnhPedia',
         ]);
     }
 }
